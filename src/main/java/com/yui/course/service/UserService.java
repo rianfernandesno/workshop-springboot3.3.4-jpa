@@ -1,7 +1,7 @@
 package com.yui.course.service;
 
 import com.yui.course.entities.User;
-import com.yui.course.repositories.UserReposotory;
+import com.yui.course.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import java.util.Optional;
 public class UserService {
 
     @Autowired
-    private UserReposotory userReposotory;
+    private UserRepository userReposotory;
 
     public List<User> findAll(){
         return userReposotory.findAll();
